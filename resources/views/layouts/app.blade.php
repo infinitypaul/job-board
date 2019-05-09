@@ -174,8 +174,7 @@
 
     </script>
 
-    <!-- Google API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g&libraries=places&callback=initAutocomplete"></script>
+
 @stack('scripts')
 </body>
 </html>
