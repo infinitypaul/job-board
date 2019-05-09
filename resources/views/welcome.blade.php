@@ -104,7 +104,7 @@
 
                                 <!-- Logo -->
                                 <div class="job-listing-company-logo">
-                                    <img src="{{ $job->user->picture }}" alt="">
+                                    <img src="{{ $job->user->avatar() }}" alt="">
                                 </div>
 
                                 <!-- Details -->

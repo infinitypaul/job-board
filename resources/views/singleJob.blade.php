@@ -9,7 +9,7 @@
                 <div class="col-md-12">
                     <div class="single-page-header-inner">
                         <div class="left-side">
-                            <div class="header-image"><a href="#"><img src="{{ $job->user->picture }}" alt=""></a></div>
+                            <div class="header-image"><a href="#"><img src="{{ $job->user->avatar() }}" alt=""></a></div>
                             <div class="header-details">
                                 <h3>{{ ucwords($job->user->name) }}</h3>
                                 <h5>About the Employer</h5>
