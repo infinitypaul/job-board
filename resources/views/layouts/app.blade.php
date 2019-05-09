@@ -76,7 +76,7 @@
                                             <div class="user-details">
                                                 <div class="user-avatar status-online"><img src="{{ asset(Auth::user()->avatar()) }}" alt=""></div>
                                                 <div class="user-name">
-                                                    {{ Auth::user()->name }} <span>Freelancer</span>
+                                                    {{ Auth::user()->name }} <span>@if(Auth::user()->account_type) Employer @else Freelancer @endif</span>
                                                 </div>
                                             </div>
                                         </div>
