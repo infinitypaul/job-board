@@ -14,7 +14,6 @@
                                 <h3>{{ ucwords($job->user->name) }}</h3>
                                 <h5>About the Employer</h5>
                                 <ul>
-                                    <li><a href="#"><i class="icon-material-outline-business"></i> King</a></li>
                                     <li><div class="star-rating" data-rating="4.9"></div></li>
                                     <li><img class="flag" src="images/flags/{{strtolower($job->location)}}.svg" alt=""> {{ $job->location }}</li>
                                     <li><div class="verified-badge-with-title">Verified</div></li>

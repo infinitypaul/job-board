@@ -57,7 +57,7 @@
 
                                                     <!-- Buttons -->
                                                     <div class="buttons-to-right always-visible margin-top-25 margin-bottom-5">
-                                                        <a download="{{ $application->user->name }}" href="{{ asset($application->user->resume->document) }}" class="button ripple-effect"><i class="icon-feather-file-text"></i> Download CV</a>
+                                                        <a download="{{ $application->user->name }}" href="{{ asset($application->user->resume->cv()) }}" class="button ripple-effect"><i class="icon-feather-file-text"></i> Download CV</a>
                                                         <a href="#small-dialog" class="popup-with-zoom-anim button dark ripple-effect callModal" data-f-id="{{$application->id}}" data-f-name="{{$application->user->name}}"><i class="icon-feather-mail"></i> Send Message</a>
                                                     </div>
                                                 </div>

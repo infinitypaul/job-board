@@ -41,7 +41,8 @@ class User extends Authenticatable implements MustVerifyEmail
         if(is_null($this->picture)){
             return "https://www.gravatar.com/avatar/". md5($this->email)."?d=mm";
         }
-        return $this->picture;
+
+        return config('filesystems.disks.s3.url').'/'.$this->picture;
 
     }
 

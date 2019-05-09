@@ -42,7 +42,7 @@ class EmployeeController extends Controller
         $job->max_salary = $request->max_salary;
         $job->tags = $request->tags;
         $job->job_description = $request->job_description;
-        $job->document = $request->file('document')->store('employee', 'public');
+        $job->document = $request->file('document')->store('designs/proville/employee', 's3');
         $job->user()->associate($user);
         $job->save();
 

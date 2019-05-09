@@ -19,7 +19,7 @@ class ProfileController extends Controller
         $user = Auth::user();
         if ($request->filled('fullname')) $user->name = $request->fullname;
         if ($request->hasFile('picture')) {
-            $user->picture = $request->file('picture')->store('images', 'public');
+            $user->picture = $request->file('picture')->store('designs/proville/images', 's3');
         }
         $user->save();
 

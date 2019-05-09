@@ -42,7 +42,7 @@ class FreelanceController extends Controller
             'user_id' => $user->id
         ]);
         if ($request->hasFile('document')) {
-            $resume->document = $request->file('document')->store('document', 'public');
+            $resume->document = $request->file('document')->store('designs/proville/document', 's3');
             $resume->save();
         }
         return redirect()->back()->with('success', 'Resume Updated Successfully');
