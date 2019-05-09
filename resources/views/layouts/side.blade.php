@@ -21,6 +21,7 @@
                         <li class="active"><a href="{{ route('home') }}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
                         @if(auth()->user()->account_type)
                             <li><a href="{{ route('manageJob') }}"><i class="icon-material-outline-star-border"></i> Manage Jobs</a></li>
+                            <li><a href="{{ route('job') }}"><i class="icon-material-outline-add"></i> Manage Jobs</a></li>
                         @else
                             <li><a href="{{ route('resume') }}"><i class="icon-material-outline-question-answer"></i> CV</a></li>
                         @endif
